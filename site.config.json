@@ -7,7 +7,7 @@
     "languages": ["ar"],
     "theme": "default",
     "demo": false,
-    "basePath": ""
+    "basePath": "/landing-page/"
   },
   "collections": {
     "pages": {
