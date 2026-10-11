@@ -1,0 +1,65 @@
+{
+  "site": {
+    "title": "احصل على خدمتنا المميزة اليوم",
+    "url": "https://USERNAME.github.io/REPO_NAME",
+    "description": "نقدم لك حلولا احترافية بأسعار تنافسية وخدمة عملاء على مدار الساعة.",
+    "language": "ar",
+    "languages": ["ar"],
+    "theme": "default",
+    "demo": false,
+    "basePath": ""
+  },
+  "collections": {
+    "pages": {
+      "path": "content/pages",
+      "urlPattern": "/:slug/",
+      "template": "landing",
+      "fields": [
+        { "name": "title", "type": "text", "required": true, "label": "العنوان الرئيسي" },
+        { "name": "description", "type": "textarea", "label": "الوصف" },
+        { "name": "brandName", "type": "text", "label": "اسم العلامة التجارية" },
+        { "name": "navFeatures", "type": "text", "label": "نص رابط المميزات" },
+        { "name": "navPricing", "type": "text", "label": "نص رابط الخطوات" },
+        { "name": "navFaq", "type": "text", "label": "نص رابط الأسئلة" },
+        { "name": "navContact", "type": "text", "label": "نص رابط تواصل" },
+        { "name": "heroTagline", "type": "text", "label": "شارة الهيرو" },
+        { "name": "heroCtaLabel", "type": "text", "label": "نص الزر الأساسي" },
+        { "name": "heroCtaUrl", "type": "text", "label": "رابط الزر الأساسي" },
+        { "name": "heroSecondaryLabel", "type": "text", "label": "نص الزر الثانوي" },
+        { "name": "heroSecondaryUrl", "type": "text", "label": "رابط الزر الثانوي" },
+        { "name": "stats", "type": "textarea", "label": "الإحصائيات (JSON)" },
+        { "name": "featuresHeading", "type": "text", "label": "عنوان المميزات" },
+        { "name": "featuresSubheading", "type": "text", "label": "وصف المميزات" },
+        { "name": "stepsHeading", "type": "text", "label": "عنوان الخطوات" },
+        { "name": "stepsSubheading", "type": "text", "label": "وصف الخطوات" },
+        { "name": "steps", "type": "textarea", "label": "الخطوات (JSON)" },
+        { "name": "testimonialsHeading", "type": "text", "label": "عنوان الشهادات" },
+        { "name": "testimonials", "type": "textarea", "label": "شهادات العملاء (JSON)" },
+        { "name": "faqHeading", "type": "text", "label": "عنوان الأسئلة" },
+        { "name": "faq", "type": "textarea", "label": "الأسئلة الشائعة (JSON)" },
+        { "name": "ctaHeading", "type": "text", "label": "عنوان CTA" },
+        { "name": "ctaSubheading", "type": "text", "label": "وصف CTA" },
+        { "name": "ctaLabel", "type": "text", "label": "نص زر CTA" },
+        { "name": "ctaUrl", "type": "text", "label": "رابط زر CTA" },
+        { "name": "formTitle", "type": "text", "label": "عنوان النموذج" },
+        { "name": "formSubtitle", "type": "text", "label": "وصف النموذج" },
+        { "name": "whatsappNumber", "type": "text", "label": "رقم واتساب" },
+        { "name": "whatsappMessage", "type": "text", "label": "رسالة واتساب الافتراضية" }
+      ]
+    },
+    "features": {
+      "path": "content/features",
+      "urlPattern": "/features/:slug/",
+      "template": "page",
+      "label": "المميزات",
+      "fields": [
+        { "name": "title", "type": "text", "required": true, "label": "العنوان" },
+        { "name": "icon", "type": "text", "label": "الأيقونة" },
+        { "name": "description", "type": "textarea", "label": "الوصف" },
+        { "name": "draft", "type": "boolean", "default": false, "label": "مسودة" }
+      ]
+    }
+  },
+  "plugins": [],
+  "pluginOptions": {}
+}

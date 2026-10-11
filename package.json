@@ -1,0 +1,20 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Landing page powered by Plain CMS",
+  "scripts": {
+    "dev": "cross-env PLAIN_BASE_PATH= node prebuild.js && node build.js --watch",
+    "build": "node prebuild.js && node build.js",
+    "build:gh": "cross-env PLAIN_BASE_PATH=/REPO_NAME/ node prebuild.js && node build.js",
+    "preview": "npx serve dist"
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "serve": "^14.2.4"
+  }
+}
