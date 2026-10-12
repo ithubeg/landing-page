@@ -5,9 +5,8 @@
   "type": "module",
   "description": "Landing page powered by Plain CMS",
   "scripts": {
-    "dev": "node build.js --watch",
-    "build": "node prebuild.js && node build.js",
-    "build:gh": "cross-env PLAIN_BASE_PATH=/REPO_NAME/ node prebuild.js && node build.js",
+  "build": "node build.js && node postbuild.mjs",
+  "build:gh": "cross-env PLAIN_BASE_PATH=/landing-page/ node build.js && node postbuild.mjs",
     "preview": "npx serve dist"
   },
   "devDependencies": {
