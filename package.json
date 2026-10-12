@@ -5,8 +5,9 @@
   "type": "module",
   "description": "Landing page powered by Plain CMS",
   "scripts": {
-  "build": "node build.js && node postbuild.mjs",
-  "build:gh": "cross-env PLAIN_BASE_PATH=/landing-page/ node build.js && node postbuild.mjs",
+    "test": "echo \"no tests\" && exit 0",
+    "build": "node build.js && node postbuild.mjs",
+    "build:gh": "cross-env PLAIN_BASE_PATH=/landing-page/ node build.js && node postbuild.mjs",
     "preview": "npx serve dist"
   },
   "devDependencies": {
